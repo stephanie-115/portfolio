@@ -8,8 +8,8 @@
   </head>
   <body>
     <div class="navbar">
-      <a href="#about">about</a>
-      <a href="#work">work</a>
+      <a href="#about" onclick="toggleAbout()">about</a>
+      <a href="#portfolio">portfolio</a>
       <a href="#experience">experience</a>
       <a href="#contact">contact</a>
     </div>
@@ -31,39 +31,51 @@
               <h2>a b o u t</h2>
             </div>
             <p>
-              I'm a New York City-based software engineer, driven by a desire to create impactful products that
-              help people. Although my background lies in educatioin, I'm fueled by a deep love for problem-solving, building,
-              and finding creative solutions.<br /><br />
-              
-              I'm proficient in JavaScript, TypeScript, React, Express,
-              Node, various SQL and NoSQL databases, GraphQL, HTML, and CSS.
+              I'm a New York City-based software engineer, driven by a desire to
+              create impactful products that help people. Although my background
+              lies in educatioin, I'm fueled by a deep love for problem-solving,
+              building, and finding creative solutions.<br /><br />
+
+              I'm proficient in JavaScript, TypeScript, React, Express, Node,
+              various SQL and NoSQL databases, GraphQL, HTML, and CSS.
               Additionally, I've gained experience with Cypress and Jest for
-              testing, demonstrating my commitment to quality assurance. <br /><br />
-              
-              My background in communication and education
-              instilled in me the importance of understanding diverse needs and
-              fostering supportive environments. These transferable skills,
-              coupled with my strong work ethic and unwavering enthusiasm, make
-              me a valuable asset to any team. I'm particularly drawn to environments that
-              value diversity, collaboration, and continuous learning. <br /><br />
-              
-              In my free time, you can find me
-              curled up with a good book (readying for my annual Goodreads goal
-              of 30!). Additionally, I'm passionate about canine nutrition and
-              creating personalized meals for my chunky English Bulldog, Stanley. <br />
+              testing, demonstrating my commitment to quality assurance.
+              <br /><br />
+
+              My background in communication and education instilled in me the
+              importance of understanding diverse needs and fostering supportive
+              environments. These transferable skills, coupled with my strong
+              work ethic and unwavering enthusiasm, make me a valuable asset to
+              any team. I'm particularly drawn to environments that value
+              diversity, collaboration, and continuous learning. <br /><br />
+
+              In my free time, you can find me curled up with a good book
+              (readying for my annual Goodreads goal of 30!). Additionally, I'm
+              passionate about canine nutrition and creating personalized meals
+              for my chunky English Bulldog, Stanley. <br />
             </p>
           </div>
         </div>
       </section>
-      <section id="work">
-        <div class="work-container">
-          <div class="work-textbox">
-            <div class="center-text">
-              <h2>w o r k</h2>
-            </div>
+      <section id="portfolio">
+        <div class="portfolio-container">
+          <h2>p o r t f o l i o</h2>
+          <div class="portfolio-cards"></div>
+          <div class="card">
+            <h3>NutriPup</h3>
+            <img src="assets/bulldog.png" class="image-card" />
+          </div>
+          <div class="card">
+            <h3>GreenPets</h3>
+            <img src="assets/plant.png" class="image-card" />
+          </div>
+          <div class="card">
+            <h3>Vista</h3>
+            <img src="assets/graphql.png" class="image-card" />
           </div>
         </div>
       </section>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
