@@ -4,6 +4,7 @@ import github from "../assets/github.png";
 import envelope from "../assets/envelope.png";
 import linkedin from "../assets/linkedin.png";
 
+//formspree
 function ContactForm() {
 
   const email = "stephanie.terese@gmail.com";
