@@ -120,6 +120,7 @@ section {
 .navbar a:hover {
   background-color: #024542;
   color: #fffdd0;
+  border-radius: 5px;
 }
 
 .about-container {
