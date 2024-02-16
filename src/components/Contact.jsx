@@ -1,16 +1,13 @@
 import React from "react";
+import { useForm, ValidationError } from "@formspree/react";
 import github from "../assets/github.png";
 import envelope from "../assets/envelope.png";
 import linkedin from "../assets/linkedin.png";
 
-export default function Contact() {
+function ContactForm() {
+
   const email = "stephanie.terese@gmail.com";
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log("Form submitted!");
-  };
-
+  const [state, handleSubmit] = useForm("xdoqgljn");
 
   return (
     <section id="contact">
@@ -34,36 +31,51 @@ export default function Contact() {
             <img src={linkedin} className="icon" alt="LinkedIn" />
           </a>
         </div>
-        <form
-          className="contact-us-form"
-          id="contactUsForm"
-          onSubmit={handleSubmit}
-        >
-          <div className="input-row">
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="n a m e"
-              required
-            />
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="e m a i l"
-              required
-            />
-          </div>
-          <textarea
-            id="message"
-            name="message"
-            placeholder="m e s s a g e"
-            required
-          ></textarea>
-          <button type="submit">s e n d</button>
-        </form>
+        {state.succeeded ? (
+          <h2 className="center-text">m e s s a g e <br />s e n t !</h2>
+        ) : (
+          <form onSubmit={handleSubmit} className="contact-us-form">
+            <label htmlFor="name"></label>
+            <div className="input-row">
+              <input id="name" type="text" name="name" placeholder="n a m e" />
+              <ValidationError
+                prefix="Name"
+                field="name"
+                errors={state.errors}
+              />
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="e m a i l"
+              />
+              <ValidationError
+                prefix="Email"
+                field="email"
+                errors={state.errors}
+              />
+              </div>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="m e s s a g e"
+              />
+              <ValidationError
+                prefix="Message"
+                field="message"
+                errors={state.errors}
+              />
+              <button type="submit" disabled={state.submitting}>
+                s u b m i t
+              </button>
+
+          </form>
+        )}
       </div>
     </section>
   );
 }
+function App() {
+  return <ContactForm />;
+}
+export default App;

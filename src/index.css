@@ -108,8 +108,8 @@ section {
 .navbar a {
   display: block;
   padding: 10px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 45px;
+  padding-bottom: 45px;
   writing-mode: vertical-lr;
   color: #fffdd0;
   text-decoration: none;
@@ -118,8 +118,9 @@ section {
 }
 
 .navbar a:hover {
-  background-color: #fffdd0;
-  color: #567f6c;
+  background-color:#024542;
+  color: #fffdd0;
+  border-radius: 5px;
 }
 
 .about-container {
@@ -127,7 +128,6 @@ section {
   color: #fffdd0;
   max-width: 800px;
   margin: 0 auto;
-  margin-bottom: 650px;
   margin-top: 50px;
 }
 
@@ -169,7 +169,7 @@ h2 {
   background-color: #567f6c;
   border-radius: 10px;
   box-sizing: border-box;
-  margin-bottom: 500px;
+  margin-bottom: 200px;
 }
 
 .portfolio-container h2 {
@@ -334,4 +334,97 @@ textarea::placeholder
   text-align: center;
 }
 
+.download-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.download-button {
+  width: auto;
+  margin: 20px 0 0 0;
+  background-color: #024542;
+  color: #fffdd0;
+  transition: background-color 0.3s, transform 0.3s;
+  padding: 15px;
+  font-size: large;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.download-button:hover {
+  background-color: #567f6c;
+  color: #fffdd0;
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    height: 60px;
+    padding: 20px;
+    padding-top: 15px;
+    padding-bottom: 5px; 
+    writing-mode: horizontal-tb;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  .navbar a {
+    padding: 10px;
+    height: 40px;
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+    writing-mode: horizontal-tb;
+    margin: 0 10 px;
+  }
+
+  .foreground-container {
+    margin-top: 180px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .background {
+    background-size: contain;
+  }
+
+  .text-content {
+    margin-top: 130px;
+    padding-left: 20px; 
+    padding-right: 20px;
+    padding-top: 100px;
+    
+  }
+
+  .title {
+    font-size: 3rem;
+    color: #024542;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .about-textbox {
+    max-width: 500px;
+  }
+
+  .resume-container {
+    max-width: 500px;
+  }
+
+  .contact-container {
+    max-width: 500px;
+  }
+
+}
 

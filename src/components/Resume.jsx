@@ -5,6 +5,7 @@ import MuiAccordion from "@mui/material/Accordion";
 import MuiAccordionSummary from "@mui/material/AccordionSummary";
 import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
+import DownloadButton from "./DownloadButton";
 
 const CustomQuestion = styled(Typography)({
   color: "#fffdd0",
@@ -259,6 +260,10 @@ export default function Resume() {
             </CustomAnswer>
           </AccordionDetails>
         </Accordion>
+        <div className="download-button-container">
+        <DownloadButton />
+        </div>
+        
       </div>
     </section>
   );
