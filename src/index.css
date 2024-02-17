@@ -27,6 +27,7 @@ html {
   perspective: 10px;
   padding-left: 70px;
 }
+/* //////// INTRO SECTION //////// */
 
 .header {
   position: relative;
@@ -93,6 +94,8 @@ section {
   align-items: center;
 }
 
+/* //////// NAVBAR //////// */
+
 .navbar {
   position: fixed;
   height: 100vh;
@@ -123,6 +126,8 @@ section {
   border-radius: 5px;
 }
 
+/* //////// ABOUT SECTION //////// */
+
 .about-container {
   padding: 2rem;
   color: #fffdd0;
@@ -142,6 +147,7 @@ section {
   max-width: 800px;
   margin: 0 auto;
   width: 100%;
+  font-size: 1.5rem;
 }
 
 .center-text {
@@ -156,6 +162,8 @@ h2 {
 .wrapper.about-active {
   padding-left: 0;
 }
+
+/* //////// PORTFOLIO SECTION //////// */
 
 .portfolio-container {
   display: flex;
@@ -179,47 +187,15 @@ h2 {
   color: #fffdd0;
 }
 
-.card {
-  flex: 0 0 600px;
-  background-color: #006a79;
-  padding: 10px;
-  margin: 10px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  text-align: center;
-  text-wrap: wrap;
-  box-sizing: border-box;
-  max-height: 250px;
-  max-width: 250px;
-  cursor: pointer;
-  transition: transform 0.3s ease-in-out;
+.front {
+  transform: rotateX(0deg);
 }
 
-.card:hover {
-  transform: scale(1.1);
+.back {
+  transform: rotateX(180deg);
 }
 
-.hidden {
-  display: none;
-}
-
-.card h3 {
-  color: #fffdd0;
-  font-size: 1rem;
-  margin-bottom: 10px;
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-.card img {
-  width: 100%;
-  max-height: 150px;
-  max-width: 150px;
-  border-radius: 5px;
-  display: block;
-  margin: 0 auto;
-}
+/* //////// RESUME SECTION //////// */
 
 .resume-container {
   position: absolute;
@@ -231,8 +207,35 @@ h2 {
   max-width: 800px;
   margin: 0 auto;
   width: 100%;
-  margin-bottom: 200px;
+  margin-bottom: 150px;
 }
+
+.download-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.download-button {
+  width: auto;
+  margin: 20px 0 0 0;
+  background-color: #024542;
+  color: #fffdd0;
+  transition: background-color 0.3s, transform 0.3s;
+  padding: 15px;
+  font-size: large;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.download-button:hover {
+  background-color: #567f6c;
+  color: #fffdd0;
+  transform: scale(1.1);
+}
+
+/* //////// CONTACT SECTION //////// */
 
 .contact-container {
   position: absolute;
@@ -246,11 +249,7 @@ h2 {
 
 .icon-container {
   display: flex;
-  justify-content: center;
-}
-
-.icon-link {
-  margin: 0 130px;
+  justify-content: space-around;
 }
 
 .icon {
@@ -281,18 +280,18 @@ h2 {
   height: 150px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1rem;
-  border: 3px solid #fffdd0;
+  border: 3px solid #024542;
   margin: 16px 0;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 .contact-us-form .input-row input[type="text"],
 .contact-us-form .input-row input[type="email"] {
-  border: 3px solid #fffdd0;
+  border: 3px solid #024542;
   margin: 16px 0;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 .contact-us-form .input-row {
@@ -334,30 +333,7 @@ textarea::placeholder
   text-align: center;
 }
 
-.download-button-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.download-button {
-  width: auto;
-  margin: 20px 0 0 0;
-  background-color: #024542;
-  color: #fffdd0;
-  transition: background-color 0.3s, transform 0.3s;
-  padding: 15px;
-  font-size: large;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.download-button:hover {
-  background-color: #567f6c;
-  color: #fffdd0;
-  transform: scale(1.1);
-}
+/* //////// RESPONSIVE STYLING //////// */
 
 @media only screen and (max-width: 767px) {
   .navbar {
@@ -382,9 +358,10 @@ textarea::placeholder
     padding: 10px;
     height: 40px;
     padding-top: 20px; 
-    padding-bottom: 20px; 
+    padding-bottom: 10px; 
     writing-mode: horizontal-tb;
     margin: 0 10 px;
+    font-size: small;
   }
 
   .foreground-container {
@@ -414,16 +391,48 @@ textarea::placeholder
     font-size: 1.2rem;
   }
 
+  .about-container {
+    height: 100vh;
+  }
+
   .about-textbox {
-    max-width: 500px;
+    height: 100vh;
+    max-width: 400px;
+    font-size: medium;
+  }
+
+  .portfolio-container {
+    max-width: 400px;
+    max-height: 4000px;
   }
 
   .resume-container {
-    max-width: 500px;
+    height: 100vh;
+    max-width: 400px;
   }
 
   .contact-container {
-    max-width: 500px;
+    height: 100vh;
+    max-width: 400px;
+  }
+
+  .download-button {
+    font-size: small;
+  }
+
+  .contact-us-form button {
+    font-size: small;
+  }
+
+  .icon-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+    
   }
 
 }

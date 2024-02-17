@@ -20,7 +20,7 @@ const CustomAnswer = styled(Typography)({
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
 ))(({ theme }) => ({
-  border: `1px solid #fffdd0`,
+  border: `3px solid #024542`,
   borderRadius: "15px !important",
   "&:before": {
     display: "none",

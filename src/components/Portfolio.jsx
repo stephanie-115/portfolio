@@ -6,37 +6,44 @@ import graphql from '../assets/graphql.png';
 import plane from '../assets/plane.png';
 import cookboook from '../assets/cookbook.png';
 import produce from '../assets/produce.png';
+import vistaMockup from '../assets/vista-mockup.png';
 
 const cardsData = [
   {
     title: 'NutriPup',
     image: dog,
-    description: 'NutriPup NutriPup NutriPup NutriPup NutriPup NutriPup ',
+    description: "Fuel your pup's joy – Tailored nutrition, AI recipes, and personalized dog profiles.",
+    mockup: vistaMockup,
   },
   {
     title:'GreenPets',
     image: plant,
-    description: 'GreenPets GreenPets GreenPets GreenPets GreenPets GreenPets ',
+    description: "Nurture your green haven – Find, nurture, and adore your perfect plant match.",
+    mockup: vistaMockup,
   },
   {
     title:'Vista',
     image: graphql,
-    description: 'Vista Vista Vista Vista Vista Vista',
+    description: "Reimagine GraphQL – Visualize, explore, and generate queries effortlessly.",
+    mockup: vistaMockup,
   },
   {
     title:'Wingman',
     image: plane,
-    description: 'Wingman Wingman Wingman Wingman Wingman Wingman ',
+    description: "Fly smart, fly seamless – Your flight companion with Amadeus API integration.",
+    mockup: vistaMockup,
   },
   {
     title:'Grandma\'s Cookbook',
     image: cookboook,
-    description: 'Grandma\'s Cookbook Grandma\'s Cookbook Grandma\'s Cookbook Grandma\'s Cookbook ',
+    description: "Timeless flavors, modern convenience – Grandma's recipes with a Tasty API twist.",
+    mockup: vistaMockup,
   },
   {
     title:'In Season Locally',
     image: produce,
-    description: 'In Season Locally In Season Locally In Season Locally In Season Locally',
+    description: "Local freshness, global taste – Personalized produce picks and vendor reviews.",
+    mockup: vistaMockup,
   },
 ]
 
