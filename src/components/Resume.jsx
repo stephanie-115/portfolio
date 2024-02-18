@@ -266,7 +266,7 @@ export default function Resume() {
               <div className="center-text">
                 Visit the GitHub Repo{" "}
                 <a
-                  href="https://github.com/inseasonlocally"
+                  href="https://github.com/inseasonlocally/inseasonlocally"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
