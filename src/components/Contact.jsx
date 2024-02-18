@@ -38,13 +38,13 @@ function ContactForm() {
           <a
             href="https://www.linkedin.com/in/stephanie-t-serrano/"
             className="icon-link"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <img
               src={linkedin}
               className="icon"
               alt="LinkedIn"
-              target="_blank"
-              rel="noopener noreferrer"
             />
           </a>
         </div>
