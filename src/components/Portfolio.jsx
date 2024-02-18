@@ -11,6 +11,7 @@ import nutripup from '../assets/nutripup-mockup.png'
 import wingman from '../assets/wingman-mockup.png'
 import greenpets from '../assets/greenpets-mockup.png'
 import underConstruction from '../assets/construction.png'
+import { Reveal } from "./Reveal";
 
 const cardsData = [
   {

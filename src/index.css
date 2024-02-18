@@ -24,6 +24,14 @@ a {
   text-decoration: none;
 }
 
+section {
+  font-size: 1rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .wrapper {
   height: 100%;
   overflow-y: auto;
@@ -95,16 +103,6 @@ footer {
   font-size: 2rem;
 }
 
-section {
-  font-size: 1rem;
-  padding: 2rem;
-  color: white;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /* //////// NAVBAR //////// */
 
 .navbar {
@@ -140,26 +138,28 @@ section {
 /* //////// ABOUT SECTION //////// */
 
 .about-container {
-  padding: 2rem;
   top: 100vh;
   color: #fffdd0;
   max-width: 850px;
   margin: 0 auto;
   margin-top: 50px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .about-textbox {
-  position: absolute;
-  top: 100vh;
-  left: 50%;
-  transform: translateX(-50%);
+  position: flex;
   background-color: #006a79;
-  padding: 20px;
+  padding: 30px;
   border-radius: 10px;
   max-width: 850px;
   margin: 0 auto;
   width: 100%;
-  font-size: 1.5rem;
+  overflow: hidden;
+}
+
+.about-textbox p {
+  font-size: 1.3rem;
 }
 
 .center-text {
@@ -168,20 +168,49 @@ section {
 }
 
 h2 {
-  max-width: 800px;
+  max-width: 100%;
 }
 
 .wrapper.about-active {
   padding-left: 0;
 }
 
-.about-icon-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 100%;
-  margin: 0 auto;
-  flex-wrap: wrap;
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.logos:before,
+.logos:after {
+  position:absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: '';
+  z-index: -2;
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 25s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 50px;
+  margin: 0 30px;
 }
 
 /* //////// PORTFOLIO SECTION //////// */
@@ -198,7 +227,7 @@ h2 {
   background-color: #567f6c;
   border-radius: 10px;
   box-sizing: border-box;
-  margin-bottom: 200px;
+  margin-top: 80px;
 }
 
 .portfolio-container h2 {
@@ -219,16 +248,17 @@ h2 {
 /* //////// RESUME SECTION //////// */
 
 .resume-container {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  position: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  box-sizing: border-box;
   background-color: #006a79;
   padding: 20px;
   border-radius: 10px;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
-  width: 100%;
-  margin-bottom: 150px;
+  margin-top: 80px;
 }
 
 .download-button-container {
@@ -259,13 +289,15 @@ h2 {
 /* //////// CONTACT SECTION //////// */
 
 .contact-container {
-  position: absolute;
+  position: flex;
   background-color: #567f6c;
   padding: 20px;
   border-radius: 10px;
   max-width: 800px;
   margin: 0 auto;
   width: 100%;
+  box-sizing: border-box;
+  margin-top: 80px;
 }
 
 .icon-container {

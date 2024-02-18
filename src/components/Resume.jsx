@@ -10,11 +10,13 @@ import DownloadButton from "./DownloadButton";
 const CustomQuestion = styled(Typography)({
   color: "#fffdd0",
   fontFamily: "Verdana, Geneva, Tahoma, sans-serif",
+  fontSize: "1.2rem",
 });
 
 const CustomAnswer = styled(Typography)({
   color: "#fffdd0",
   fontFamily: "Verdana, Geneva, Tahoma, sans-serif",
+  fontSize: "1.2rem",
 });
 
 const Accordion = styled((props) => (
@@ -93,7 +95,16 @@ export default function Resume() {
               better remote team collaboration and contributed to more efficient
               project delivery.
               <br /> <br />
-              <div className="center-text">Check out our product <a href="https://greenpets.netlify.app/">here!</a></div>
+              <div className="center-text">
+                Check out our product{" "}
+                <a
+                  href="https://greenpets.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  here!
+                </a>
+              </div>
             </CustomAnswer>
           </AccordionDetails>
         </Accordion>
@@ -128,7 +139,16 @@ export default function Resume() {
               <br />● Conducted backend unit tests with Jest, achieving 80% code
               coverage, contributing to robust application functionality and
               stability. <br /> <br />
-              <div className="center-text">Check out our product <a href="https://www.vistavisualizer.com/">here!</a></div>
+              <div className="center-text">
+                Check out our product{" "}
+                <a
+                  href="https://www.vistavisualizer.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  here!
+                </a>
+              </div>
             </CustomAnswer>
           </AccordionDetails>
         </Accordion>
@@ -156,7 +176,16 @@ export default function Resume() {
               <br />● Implemented Bcrypt to hash passwords with salts to encrypt
               sensitive user inputs and defend against possible rainbow table
               attacks. <br /> <br />
-              <div className="center-text">Visit the GitHub Repo <a href="https://github.com/stephanie-115/nutripup">here!</a></div>
+              <div className="center-text">
+                Visit the GitHub Repo{" "}
+                <a
+                  href="https://github.com/stephanie-115/nutripup"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  here!
+                </a>
+              </div>
             </CustomAnswer>
           </AccordionDetails>
         </Accordion>
@@ -175,8 +204,17 @@ export default function Resume() {
               satisfaction by 30%. <br />
               <br />● Established OAuth using Passport for secure
               authentication, bolstering defenses, resulting in a 50% reduction
-              in unauthorized access.              <br /> <br />
-              <div className="center-text">Visit the GitHub Repo <a href="https://github.com/project-wing-man/wingman">here!</a></div>
+              in unauthorized access. <br /> <br />
+              <div className="center-text">
+                Visit the GitHub Repo{" "}
+                <a
+                  href="https://github.com/project-wing-man/wingman"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  here!
+                </a>
+              </div>
             </CustomAnswer>
           </AccordionDetails>
         </Accordion>
@@ -196,7 +234,16 @@ export default function Resume() {
               <br />● Deployed Redux Toolkit for enhanced state management,
               streamlining data flow and reducing bug reports by 10%.
               <br /> <br />
-              <div className="center-text">Visit the GitHub Repo <a href="https://github.com/Avatar-Group/Grandmas-Cookbook-v2">here!</a></div>
+              <div className="center-text">
+                Visit the GitHub Repo{" "}
+                <a
+                  href="https://github.com/Avatar-Group/Grandmas-Cookbook-v2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  here!
+                </a>
+              </div>
             </CustomAnswer>
           </AccordionDetails>
         </Accordion>
@@ -216,39 +263,16 @@ export default function Resume() {
               <br />● Customized webpack settings to quicken load times by 20%,
               injecting code-splitting, improving engagement with geo-specific
               produce data. <br /> <br />
-              <div className="center-text">Visit the GitHub Repo <a href="https://github.com/inseasonlocally">here!</a></div>
-            </CustomAnswer>
-          </AccordionDetails>
-        </Accordion>
-        <br />
-        <Accordion
-          expanded={expanded === "panel7"}
-          onChange={handleChange("panel7")}
-        >
-          <AccordionSummary aria-controls="panel7d-content" id="panel7d-header">
-            <CustomQuestion>
-              New York City Department of Education
-            </CustomQuestion>
-          </AccordionSummary>
-          <AccordionDetails>
-            <CustomAnswer>
-              ● Transformed student data management by automating entry
-              processes, reducing errors by 40%, and saving 260 hours annually.{" "}
-              <br />
-              <br />
-              ● Led Google Classroom configurations, boosting classroom
-              engagement by 15% and earning commendations from educational
-              stakeholders.
-              <br />
-              <br />
-              ● Headed the English as a New Language department, devised
-              data-driven instructional strategies, improving language
-              proficiency outcomes. <br />
-              <br />● Served as a go-to IT support for 25+ staff, maintaining a
-              seamless digital learning environment through Google Classroom.{" "}
-              <br />
-              <br />● Active member of leadership teams, influencing teaching
-              strategies that positively impacted 300+ students school-wide.
+              <div className="center-text">
+                Visit the GitHub Repo{" "}
+                <a
+                  href="https://github.com/inseasonlocally"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  here!
+                </a>
+              </div>
             </CustomAnswer>
           </AccordionDetails>
         </Accordion>
@@ -280,13 +304,21 @@ export default function Resume() {
           <AccordionDetails>
             <CustomAnswer>
               ●
-              <a href="https://www.linkedin.com/feed/update/urn:li:activity:7098732087989428224/">
+              <a
+                href="https://www.linkedin.com/feed/update/urn:li:activity:7098732087989428224/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Testing Tools and Frameworks
               </a>{" "}
               | <i>Hosted by Jeeny & Bractlet</i>
               <br />
               <br />●
-              <a href="https://vistavisualizer.medium.com/vista-the-remedy-to-your-graphql-schema-woes-6a99e16e1fbf">
+              <a
+                href="https://vistavisualizer.medium.com/vista-the-remedy-to-your-graphql-schema-woes-6a99e16e1fbf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Vista: The Remedy to Your GraphQL Woes
               </a>{" "}
               | <i>Medium</i>

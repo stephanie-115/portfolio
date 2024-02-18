@@ -3,10 +3,10 @@ import { useForm, ValidationError } from "@formspree/react";
 import github from "../assets/github.png";
 import envelope from "../assets/envelope.png";
 import linkedin from "../assets/linkedin.png";
+import { Reveal } from "./Reveal";
 
 //formspree
 function ContactForm() {
-
   const email = "stephanie.terese@gmail.com";
   const [state, handleSubmit] = useForm("xdoqgljn");
 
@@ -17,11 +17,21 @@ function ContactForm() {
           <h2>c o n t a c t</h2>
         </div>
         <div className="icon-container">
-          <a href="https://github.com/stephanie-115" className="icon-link">
+          <a
+            href="https://github.com/stephanie-115"
+            className="icon-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={github} className="icon" alt="GitHub" />
           </a>
 
-          <a href={`mailto:${email}`} className="icon-link">
+          <a
+            href={`mailto:${email}`}
+            className="icon-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={envelope} className="icon" alt="Email" />
           </a>
 
@@ -29,11 +39,19 @@ function ContactForm() {
             href="https://www.linkedin.com/in/stephanie-t-serrano/"
             className="icon-link"
           >
-            <img src={linkedin} className="icon" alt="LinkedIn" />
+            <img
+              src={linkedin}
+              className="icon"
+              alt="LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
+            />
           </a>
         </div>
         {state.succeeded ? (
-          <h2 className="center-text">m e s s a g e <br />s e n t !</h2>
+          <h2 className="center-text">
+            m e s s a g e <br />s e n t !
+          </h2>
         ) : (
           <form onSubmit={handleSubmit} className="contact-us-form">
             <label htmlFor="name"></label>
@@ -55,21 +73,16 @@ function ContactForm() {
                 field="email"
                 errors={state.errors}
               />
-              </div>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="m e s s a g e"
-              />
-              <ValidationError
-                prefix="Message"
-                field="message"
-                errors={state.errors}
-              />
-              <button type="submit" disabled={state.submitting}>
-                s u b m i t
-              </button>
-
+            </div>
+            <textarea id="message" name="message" placeholder="m e s s a g e" />
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+            />
+            <button type="submit" disabled={state.submitting}>
+              s u b m i t
+            </button>
           </form>
         )}
       </div>
