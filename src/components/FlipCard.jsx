@@ -23,13 +23,11 @@ const FlipCard = ({ card }) => {
           rotateX: "180deg",
         }}
       >
-        <div className="content">
           <img
             src={card.mockup}
             alt={card.mockup}
-            className={`${styles.back - card}`}
+            className={`${styles.backcard}`}
           />
-        </div>
       </a.div>
       <a.div
         className={`${styles.card} ${styles.front}`}

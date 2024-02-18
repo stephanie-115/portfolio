@@ -135,40 +135,7 @@ export default function Resume() {
           onChange={handleChange("panel3")}
         >
           <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-            <CustomQuestion>
-              New York City Department of Education
-            </CustomQuestion>
-          </AccordionSummary>
-          <AccordionDetails>
-            <CustomAnswer>
-              ● Transformed student data management by automating entry
-              processes, reducing errors by 40%, and saving 260 hours annually.{" "}
-              <br />
-              <br />
-              ● Led Google Classroom configurations, boosting classroom
-              engagement by 15% and earning commendations from educational
-              stakeholders.
-              <br />
-              <br />
-              ● Headed the English as a New Language department, devised
-              data-driven instructional strategies, improving language
-              proficiency outcomes. <br />
-              <br />
-              ● Served as a go-to IT support for 25+ staff, maintaining a
-              seamless digital learning environment through Google Classroom.{" "}
-              <br />
-              <br />● Active member of leadership teams, influencing teaching
-              strategies that positively impacted 300+ students school-wide.
-            </CustomAnswer>
-          </AccordionDetails>
-        </Accordion>
-        <br />
-        <Accordion
-          expanded={expanded === "panel4"}
-          onChange={handleChange("panel4")}
-        >
-          <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
-            <CustomQuestion>Nutripup</CustomQuestion>
+            <CustomQuestion>NutriPup</CustomQuestion>
           </AccordionSummary>
           <AccordionDetails>
             <CustomAnswer>
@@ -191,10 +158,10 @@ export default function Resume() {
         </Accordion>
         <br />
         <Accordion
-          expanded={expanded === "panel5"}
-          onChange={handleChange("panel5")}
+          expanded={expanded === "panel4"}
+          onChange={handleChange("panel4")}
         >
-          <AccordionSummary aria-controls="panel5d-content" id="panel5d-header">
+          <AccordionSummary aria-controls="panel4d-content" id="panel4d-header">
             <CustomQuestion>Wingman</CustomQuestion>
           </AccordionSummary>
           <AccordionDetails>
@@ -210,10 +177,10 @@ export default function Resume() {
         </Accordion>
         <br />
         <Accordion
-          expanded={expanded === "panel6"}
-          onChange={handleChange("panel6")}
+          expanded={expanded === "panel5"}
+          onChange={handleChange("panel5")}
         >
-          <AccordionSummary aria-controls="panel6d-content" id="panel6d-header">
+          <AccordionSummary aria-controls="panel5d-content" id="panel5d-header">
             <CustomQuestion>Grandma's Cookbook</CustomQuestion>
           </AccordionSummary>
           <AccordionDetails>
@@ -228,10 +195,10 @@ export default function Resume() {
         </Accordion>
         <br />
         <Accordion
-          expanded={expanded === "panel7"}
-          onChange={handleChange("panel7")}
+          expanded={expanded === "panel6"}
+          onChange={handleChange("panel6")}
         >
-          <AccordionSummary aria-controls="panel7d-content" id="panel7d-header">
+          <AccordionSummary aria-controls="panel6d-content" id="panel6d-header">
             <CustomQuestion>In Season Locally</CustomQuestion>
           </AccordionSummary>
           <AccordionDetails>
@@ -247,6 +214,38 @@ export default function Resume() {
         </Accordion>
         <br />
         <Accordion
+          expanded={expanded === "panel7"}
+          onChange={handleChange("panel7")}
+        >
+          <AccordionSummary aria-controls="panel7d-content" id="panel7d-header">
+            <CustomQuestion>
+              New York City Department of Education
+            </CustomQuestion>
+          </AccordionSummary>
+          <AccordionDetails>
+            <CustomAnswer>
+              ● Transformed student data management by automating entry
+              processes, reducing errors by 40%, and saving 260 hours annually.{" "}
+              <br />
+              <br />
+              ● Led Google Classroom configurations, boosting classroom
+              engagement by 15% and earning commendations from educational
+              stakeholders.
+              <br />
+              <br />
+              ● Headed the English as a New Language department, devised
+              data-driven instructional strategies, improving language
+              proficiency outcomes. <br />
+              <br />● Served as a go-to IT support for 25+ staff, maintaining a
+              seamless digital learning environment through Google Classroom.{" "}
+              <br />
+              <br />● Active member of leadership teams, influencing teaching
+              strategies that positively impacted 300+ students school-wide.
+            </CustomAnswer>
+          </AccordionDetails>
+        </Accordion>
+        <br />
+        <Accordion
           expanded={expanded === "panel8"}
           onChange={handleChange("panel8")}
         >
@@ -255,15 +254,40 @@ export default function Resume() {
           </AccordionSummary>
           <AccordionDetails>
             <CustomAnswer>
-              ● <b>CUNY- Queens College</b> | Queens, NY | <i>Masters of Science</i> <br/><br/>
-              ● <b>Siena College</b> | Loudonville, NY | <i>Bachelor of Arts</i>
+              ● <b>CUNY- Queens College</b> | Queens, NY |{" "}
+              <i>Masters of Science</i> <br />
+              <br />● <b>Siena College</b> | Loudonville, NY |{" "}
+              <i>Bachelor of Arts</i>
+            </CustomAnswer>
+          </AccordionDetails>
+        </Accordion>
+        <br />
+        <Accordion
+          expanded={expanded === "panel9"}
+          onChange={handleChange("panel9")}
+        >
+          <AccordionSummary aria-controls="panel9d-content" id="panel9d-header">
+            <CustomQuestion>Talks & Publications</CustomQuestion>
+          </AccordionSummary>
+          <AccordionDetails>
+            <CustomAnswer>
+              ●
+              <a href="https://www.linkedin.com/feed/update/urn:li:activity:7098732087989428224/">
+                Testing Tools and Frameworks
+              </a>{" "}
+              | <i>Hosted by Jeeny & Bractlet</i>
+              <br />
+              <br />●
+              <a href="https://vistavisualizer.medium.com/vista-the-remedy-to-your-graphql-schema-woes-6a99e16e1fbf">
+                Vista: The Remedy to Your GraphQL Woes
+              </a>{" "}
+              | <i>Medium</i>
             </CustomAnswer>
           </AccordionDetails>
         </Accordion>
         <div className="download-button-container">
-        <DownloadButton />
+          <DownloadButton />
         </div>
-        
       </div>
     </section>
   );

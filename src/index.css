@@ -27,6 +27,13 @@ html {
   perspective: 10px;
   padding-left: 70px;
 }
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #fffdd0;
+}
 /* //////// INTRO SECTION //////// */
 
 .header {
@@ -130,8 +137,9 @@ section {
 
 .about-container {
   padding: 2rem;
+  top: 100vh;
   color: #fffdd0;
-  max-width: 800px;
+  max-width: 850px;
   margin: 0 auto;
   margin-top: 50px;
 }
@@ -144,7 +152,7 @@ section {
   background-color: #006a79;
   padding: 20px;
   border-radius: 10px;
-  max-width: 800px;
+  max-width: 850px;
   margin: 0 auto;
   width: 100%;
   font-size: 1.5rem;
@@ -161,6 +169,14 @@ h2 {
 
 .wrapper.about-active {
   padding-left: 0;
+}
+
+.about-icon-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 /* //////// PORTFOLIO SECTION //////// */
@@ -433,6 +449,9 @@ textarea::placeholder
     width: 30px;
     height: 30px;
     
+  }
+  .about-icon-container .icon {
+    width: 30%;
   }
 
 }
