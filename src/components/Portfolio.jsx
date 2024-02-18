@@ -10,6 +10,7 @@ import vista from '../assets/vista-mockup.png';
 import nutripup from '../assets/nutripup-mockup.png'
 import wingman from '../assets/wingman-mockup.png'
 import greenpets from '../assets/greenpets-mockup.png'
+import underConstruction from '../assets/construction.png'
 
 const cardsData = [
   {
@@ -40,13 +41,13 @@ const cardsData = [
     title:'Grandma\'s Cookbook',
     image: cookboook,
     description: "Timeless flavors, modern convenience – Grandma's recipes with a Tasty API twist.",
-    mockup: vista,
+    mockup: underConstruction,
   },
   {
     title:'In Season Locally',
     image: produce,
     description: "Local freshness, global taste – Personalized produce picks and vendor reviews.",
-    mockup: vista,
+    mockup: underConstruction,
   },
 ]
 

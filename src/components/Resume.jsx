@@ -92,6 +92,8 @@ export default function Resume() {
               reviews, which improved team productivity by 25% and fostered
               better remote team collaboration and contributed to more efficient
               project delivery.
+              <br /> <br />
+              <div className="center-text">Check out our product <a href="https://greenpets.netlify.app/">here!</a></div>
             </CustomAnswer>
           </AccordionDetails>
         </Accordion>
@@ -125,7 +127,8 @@ export default function Resume() {
               <br />
               <br />● Conducted backend unit tests with Jest, achieving 80% code
               coverage, contributing to robust application functionality and
-              stability.
+              stability. <br /> <br />
+              <div className="center-text">Check out our product <a href="https://www.vistavisualizer.com/">here!</a></div>
             </CustomAnswer>
           </AccordionDetails>
         </Accordion>
@@ -152,7 +155,8 @@ export default function Resume() {
               customization. <br />
               <br />● Implemented Bcrypt to hash passwords with salts to encrypt
               sensitive user inputs and defend against possible rainbow table
-              attacks.
+              attacks. <br /> <br />
+              <div className="center-text">Visit the GitHub Repo <a href="https://github.com/stephanie-115/nutripup">here!</a></div>
             </CustomAnswer>
           </AccordionDetails>
         </Accordion>
@@ -171,7 +175,8 @@ export default function Resume() {
               satisfaction by 30%. <br />
               <br />● Established OAuth using Passport for secure
               authentication, bolstering defenses, resulting in a 50% reduction
-              in unauthorized access.
+              in unauthorized access.              <br /> <br />
+              <div className="center-text">Visit the GitHub Repo <a href="https://github.com/project-wing-man/wingman">here!</a></div>
             </CustomAnswer>
           </AccordionDetails>
         </Accordion>
@@ -190,6 +195,8 @@ export default function Resume() {
               growth. <br />
               <br />● Deployed Redux Toolkit for enhanced state management,
               streamlining data flow and reducing bug reports by 10%.
+              <br /> <br />
+              <div className="center-text">Visit the GitHub Repo <a href="https://github.com/Avatar-Group/Grandmas-Cookbook-v2">here!</a></div>
             </CustomAnswer>
           </AccordionDetails>
         </Accordion>
@@ -208,7 +215,8 @@ export default function Resume() {
               user retention. <br />
               <br />● Customized webpack settings to quicken load times by 20%,
               injecting code-splitting, improving engagement with geo-specific
-              produce data.
+              produce data. <br /> <br />
+              <div className="center-text">Visit the GitHub Repo <a href="https://github.com/inseasonlocally">here!</a></div>
             </CustomAnswer>
           </AccordionDetails>
         </Accordion>

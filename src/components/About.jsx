@@ -45,17 +45,17 @@ function About() {
             meals for my chunky English Bulldog, Stanley. <br /><br />
           </p>
           <div className='about-icon-container'>
-          <img src={typescript}/>
-          <img src={graphql}/>
-          <img src={mongodb}/>
-          <img src={express}/>
-          <img src={javascript}/>
-          <img src={mysql}/>
-          <img src={node}/>
-          <img src={postgresql}/>
-          <img src={react}/>
-          <img src={redis}/>
-          <img src={jest}/>
+          <img src={typescript} title='Typescript Logo'/>
+          <img src={graphql} title='GraphQL Logo'/>
+          <img src={mongodb} title='MongoDB Logo'/>
+          <img src={express} title='Express Logo'/>
+          <img src={javascript} title='JavaScript Logo'/>
+          <img src={mysql} title='MySQL Logo'/>
+          <img src={node} title='Node.js Logo'/>
+          <img src={postgresql} title='PostgreSQL Logo'/>
+          <img src={react} title='React Logo'/>
+          <img src={redis} title='Redis Logo'/>
+          <img src={jest} title='Jest Logo'/>
           </div>
 
         </div>
