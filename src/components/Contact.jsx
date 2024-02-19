@@ -41,11 +41,7 @@ function ContactForm() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              src={linkedin}
-              className="icon"
-              alt="LinkedIn"
-            />
+            <img src={linkedin} className="icon" alt="LinkedIn" />
           </a>
         </div>
         {state.succeeded ? (

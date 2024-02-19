@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   min-height: 100%;
@@ -14,7 +15,6 @@ body {
   background-size: cover;
   min-height: 100%;
 }
-
 
 html {
   scroll-behavior: smooth;
@@ -109,7 +109,7 @@ footer {
   position: fixed;
   height: 100vh;
   overflow: hidden;
-  background-color: #567f6c;
+  background-color: #024542;
   color: #fffdd0;
   padding-top: 20px;
   text-align: center;
@@ -130,20 +130,21 @@ footer {
 }
 
 .navbar a:hover {
-  background-color:#024542;
+  background-color: #567f6c;
   color: #fffdd0;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 /* //////// ABOUT SECTION //////// */
 
 .about-container {
+  display: flex;
+  flex-wrap: wrap;
   top: 100vh;
   color: #fffdd0;
   max-width: 850px;
   margin: 0 auto;
   margin-top: 50px;
-  padding: 20px;
   box-sizing: border-box;
 }
 
@@ -191,11 +192,11 @@ h2 {
 
 .logos:before,
 .logos:after {
-  position:absolute;
+  position: absolute;
   top: 0;
   width: 250px;
   height: 100%;
-  content: '';
+  content: "";
   z-index: -2;
 }
 
@@ -325,7 +326,7 @@ h2 {
   width: 100%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1rem;
-  color: #006a79;
+  color: #024542;
 }
 
 .contact-us-form textarea {
@@ -337,6 +338,7 @@ h2 {
   margin: 16px 0;
   padding: 10px;
   border-radius: 8px;
+  color: #024542;
 }
 
 .contact-us-form .input-row input[type="text"],
@@ -381,13 +383,13 @@ h2 {
 }
 
 input::placeholder,
-textarea::placeholder
-{
+textarea::placeholder {
   text-align: center;
 }
 
 /* //////// RESPONSIVE STYLING //////// */
 
+/* //////// TABLETS //////// */
 @media only screen and (max-width: 767px) {
   .navbar {
     position: fixed;
@@ -398,7 +400,7 @@ textarea::placeholder
     height: 60px;
     padding: 20px;
     padding-top: 15px;
-    padding-bottom: 5px; 
+    padding-bottom: 5px;
     writing-mode: horizontal-tb;
     text-align: center;
     display: flex;
@@ -410,8 +412,8 @@ textarea::placeholder
   .navbar a {
     padding: 10px;
     height: 40px;
-    padding-top: 20px; 
-    padding-bottom: 10px; 
+    padding-top: 20px;
+    padding-bottom: 10px;
     writing-mode: horizontal-tb;
     margin: 0 10 px;
     font-size: small;
@@ -429,10 +431,9 @@ textarea::placeholder
 
   .text-content {
     margin-top: 130px;
-    padding-left: 20px; 
+    padding-left: 20px;
     padding-right: 20px;
     padding-top: 100px;
-    
   }
 
   .title {
@@ -445,28 +446,28 @@ textarea::placeholder
   }
 
   .about-container {
-    height: 100vh;
+    height: auto;
   }
 
   .about-textbox {
-    height: 100vh;
-    max-width: 400px;
+    height: auto;
+    max-width: 550px;
     font-size: medium;
   }
 
   .portfolio-container {
-    max-width: 400px;
-    max-height: 4000px;
+    max-width: 600px;
+    height: auto;
   }
 
   .resume-container {
-    height: 100vh;
-    max-width: 400px;
+    height: auto;
+    max-width: 600px;
   }
 
   .contact-container {
-    height: 100vh;
-    max-width: 400px;
+    height: auto;
+    max-width: 600px;
   }
 
   .download-button {
@@ -492,3 +493,106 @@ textarea::placeholder
   }
 }
 
+/* //////// MOBILE //////// */
+@media only screen and (max-width: 480px) {
+  .navbar {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    height: 40px;
+    padding-top: 15px;
+    writing-mode: horizontal-tb;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  .navbar a {
+    padding: 10px;
+    height: 40px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    writing-mode: horizontal-tb;
+    margin: 0 10 px;
+    font-size: 0.7rem;
+  }
+
+  .foreground-container {
+    margin-top: 180px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .background {
+    background-size: contain;
+    max-width: 400px;
+  }
+
+  .text-content {
+    margin-top: 130px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 100px;
+  }
+
+  .title {
+    font-size: 2rem;
+    color: #024542;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .about-container {
+    height: auto;
+    max-width: 400px;
+  }
+
+  .about-textbox {
+    height: auto;
+    max-width: 400px;
+    font-size: medium;
+  }
+
+  .portfolio-container {
+    max-width: 400px;
+    height: auto;
+  }
+
+  .resume-container {
+    height: auto;
+    max-width: 400px;
+  }
+
+  .contact-container {
+    height: auto;
+    max-width: 400px;
+  }
+
+  .download-button {
+    font-size: small;
+  }
+
+  .contact-us-form button {
+    font-size: small;
+  }
+
+  .icon-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .about-icon-container {
+    max-width: 100%;
+  }
+}

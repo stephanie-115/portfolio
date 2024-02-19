@@ -23,18 +23,20 @@ const FlipCard = ({ card }) => {
           rotateX: "180deg",
         }}
       >
-          <img
-            src={card.mockup}
-            alt={card.mockup}
-            className={`${styles.backcard}`}
-          />
+        <img
+          src={card.mockup}
+          alt={card.mockup}
+          className={`${styles.backcard}`}
+        />
       </a.div>
       <a.div
         className={`${styles.card} ${styles.front}`}
         style={{ opacity: opacity.to((o) => 1 - o), transform }}
       >
         <div className={`${styles.card}`}>
-          <h3>{card.title}</h3><br/><br/>
+          <h3>{card.title}</h3>
+          <br />
+          <br />
           <p>{card.description}</p>
           <img src={card.image} alt={card.title} />
         </div>

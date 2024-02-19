@@ -8,8 +8,8 @@ export const Reveal = ({ children, width }) => {
   const mainControls = useAnimation();
 
   useEffect(() => {
-    if(isInView) {
-      mainControls.start('visible')
+    if (isInView) {
+      mainControls.start("visible");
     }
   }, [isInView]);
   return (

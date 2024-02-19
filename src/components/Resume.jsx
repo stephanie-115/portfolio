@@ -319,7 +319,7 @@ export default function Resume() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Vista: The Remedy to Your GraphQL Woes
+                Vista: The Remedy to Your GraphQL Schema Woes
               </a>{" "}
               | <i>Medium</i>
             </CustomAnswer>

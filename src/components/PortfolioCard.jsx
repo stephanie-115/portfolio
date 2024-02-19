@@ -5,7 +5,7 @@ export default function Card({ cards }) {
   return (
     <>
       {cards.map((card, index) => (
-        <FlipCard key={index} card={card}/>
+        <FlipCard key={index} card={card} />
       ))}
     </>
   );
