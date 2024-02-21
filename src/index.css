@@ -120,8 +120,8 @@ footer {
 .navbar a {
   display: block;
   padding: 10px;
-  padding-top: 45px;
-  padding-bottom: 45px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   writing-mode: vertical-lr;
   color: #fffdd0;
   text-decoration: none;
@@ -133,6 +133,7 @@ footer {
   background-color: #567f6c;
   color: #fffdd0;
   border-radius: 8px;
+  text-decoration: none;
 }
 
 /* //////// ABOUT SECTION //////// */
@@ -238,14 +239,6 @@ h2 {
   color: #fffdd0;
 }
 
-.front {
-  transform: rotateX(0deg);
-}
-
-.back {
-  transform: rotateX(180deg);
-}
-
 /* //////// RESUME SECTION //////// */
 
 .resume-container {
@@ -334,6 +327,7 @@ h2 {
 }
 
 .contact-us-form textarea {
+  max-width: 500px;
   width: 100%;
   height: 150px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -343,6 +337,7 @@ h2 {
   padding: 10px;
   border-radius: 8px;
   color: #024542;
+  box-sizing: border-box;
 }
 
 .contact-us-form .input-row input[type="text"],
@@ -397,7 +392,7 @@ textarea::placeholder {
 @media only screen and (max-width: 767px) {
   .navbar {
     position: fixed;
-    width: 767px;
+    width: 100%;
     height: auto;
     top: 0;
     left: 0;
@@ -501,7 +496,7 @@ textarea::placeholder {
 @media only screen and (max-width: 400px) {
   .navbar {
     position: fixed;
-    width: 400px;
+    width: 100%;
     height: auto;
     top: 0;
     left: 0;

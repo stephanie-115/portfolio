@@ -52,7 +52,13 @@ function ContactForm() {
           <form onSubmit={handleSubmit} className="contact-us-form">
             <label htmlFor="name"></label>
             <div className="input-row">
-              <input id="name" type="text" name="name" placeholder="n a m e" />
+              <input
+                id="name"
+                type="text"
+                name="name"
+                placeholder="n a m e"
+                required
+              />
               <ValidationError
                 prefix="Name"
                 field="name"
@@ -63,6 +69,8 @@ function ContactForm() {
                 type="email"
                 name="email"
                 placeholder="e m a i l"
+                required
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
               />
               <ValidationError
                 prefix="Email"
@@ -70,7 +78,12 @@ function ContactForm() {
                 errors={state.errors}
               />
             </div>
-            <textarea id="message" name="message" placeholder="m e s s a g e" />
+            <textarea
+              id="message"
+              name="message"
+              placeholder="m e s s a g e"
+              required
+            />
             <ValidationError
               prefix="Message"
               field="message"
