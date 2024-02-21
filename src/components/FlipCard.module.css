@@ -1,7 +1,7 @@
 .container {
   position: relative;
   max-width: 500px;
-  width: 350px;
+  width: 360px;
   height: 360px;
   cursor: pointer;
   perspective: 800px;
@@ -130,7 +130,8 @@
 .icon {
   width: 30px;
   height: 30px;
-  margin-right: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
   transition: transform 0.3s ease-in-out;
 }
 
