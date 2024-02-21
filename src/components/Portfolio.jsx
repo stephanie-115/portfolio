@@ -11,6 +11,8 @@ import nutripup from "../assets/nutripup-mockup.png";
 import wingman from "../assets/wingman-mockup.png";
 import greenpets from "../assets/greenpets-mockup.png";
 import underConstruction from "../assets/construction.png";
+import githubIcon from "../assets/github.png";
+import websiteIcon from "../assets/website.png";
 import { Reveal } from "./Reveal";
 
 const cardsData = [
@@ -20,6 +22,10 @@ const cardsData = [
     description:
       "Nurture your green haven – Find, nurture, and adore your perfect plant match.",
     mockup: greenpets,
+    websiteIcon,
+    githubIcon,
+    websiteUrl: "https://greenpets.netlify.app/",
+    githubUrl: "https://github.com/Los-Terremotos/GreenPets",
   },
   {
     title: "Vista",
@@ -27,6 +33,10 @@ const cardsData = [
     description:
       "Reimagine GraphQL – Visualize, explore, and generate queries effortlessly.",
     mockup: vista,
+    websiteIcon,
+    githubIcon,
+    websiteUrl: "https://www.vistavisualizer.com/",
+    githubUrl: "https://github.com/oslabs-beta/vista",
   },
   {
     title: "NutriPup",
@@ -34,6 +44,8 @@ const cardsData = [
     description:
       "Fuel your pup's joy – Tailored nutrition, AI recipes, and personalized dog profiles.",
     mockup: nutripup,
+    githubIcon,
+    githubUrl: "https://github.com/stephanie-115/nutripup",
   },
   {
     title: "Wingman",
@@ -41,6 +53,8 @@ const cardsData = [
     description:
       "Fly smart, fly seamless – Your flight companion with Amadeus API integration.",
     mockup: wingman,
+    githubIcon,
+    githubUrl: "https://github.com/project-wing-man/wingman",
   },
   {
     title: "Grandma's Cookbook",
@@ -48,6 +62,8 @@ const cardsData = [
     description:
       "Timeless flavors, modern convenience – Grandma's recipes with a Tasty API twist.",
     mockup: underConstruction,
+    githubIcon,
+    githubUrl: "https://github.com/Avatar-Group/Grandmas-Cookbook-v2",
   },
   {
     title: "In Season Locally",
@@ -55,6 +71,8 @@ const cardsData = [
     description:
       "Local freshness, global taste – Personalized produce picks and vendor reviews.",
     mockup: underConstruction,
+    githubIcon,
+    githubUrl: "https://github.com/inseasonlocally/inseasonlocally",
   },
 ];
 
@@ -64,6 +82,7 @@ export default function Portfolio() {
       <div className="portfolio-container">
         <h2>p o r t f o l i o</h2>
         <Card cards={cardsData} />
+        <div className="container-spacing"></div>
       </div>
     </section>
   );

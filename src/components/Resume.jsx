@@ -89,13 +89,33 @@ export default function Resume() {
               ● Adopted TypeScript for a type-safe codebase, achieving a 15%
               reduction in production bugs and expedited feature development.
               <br />
-              <br />● Spearheaded the adoption of agile methodologies,
-              encompassing sprint planning, daily stand-ups, and rigorous code
-              reviews, which improved team productivity by 25% and fostered
-              better remote team collaboration and contributed to more efficient
-              project delivery.
+              <br />
+              ● Developed modular, reusable components architecture, leveraging
+              React's Virtual DOM for optimal rendering, maintainability, and
+              scalability.
+              <br />
+              <br />
+              ● Implemented cohesive, maintainable styling using styled
+              components, ensuring seamless integration of designs into React
+              components.
+              <br />
+              <br />
+              ● Administered Redux TK for state management, eliminating
+              prop-drilling through trackable actions, enabling time-travel
+              debugging.
+              <br />
+              <br />
+              ● Structured and optimized Kanban board for ticketing systems,
+              resulting in 24% efficiency improvement through iterative
+              development.
+              <br />
+              <br />
+              ● Spearheaded the adoption of agile methodologies, encompassing
+              sprint planning, daily stand-ups, and rigorous code reviews, which
+              improved team productivity by 25% and fostered better remote team
+              collaboration and contributed to more efficient project delivery.
               <br /> <br />
-              <div className="center-text">
+              <span className="center-text">
                 Check out our product{" "}
                 <a
                   href="https://greenpets.netlify.app/"
@@ -104,7 +124,7 @@ export default function Resume() {
                 >
                   here!
                 </a>
-              </div>
+              </span>
             </CustomAnswer>
           </AccordionDetails>
         </Accordion>
@@ -139,7 +159,10 @@ export default function Resume() {
               <br />● Conducted backend unit tests with Jest, achieving 80% code
               coverage, contributing to robust application functionality and
               stability. <br /> <br />
-              <div className="center-text">
+              ● Led daily stand-ups, code reviews, and release planning for a
+              team of five engineers, ensuring project milestone alignment.
+              <br /> <br />
+              <span className="center-text">
                 Check out our product{" "}
                 <a
                   href="https://www.vistavisualizer.com/"
@@ -148,7 +171,7 @@ export default function Resume() {
                 >
                   here!
                 </a>
-              </div>
+              </span>
             </CustomAnswer>
           </AccordionDetails>
         </Accordion>
@@ -173,10 +196,16 @@ export default function Resume() {
               ● Designed a seamless UI with React and Node.js, resulting in a
               30% increase in navigation efficiency and enabling recipe
               customization. <br />
-              <br />● Implemented Bcrypt to hash passwords with salts to encrypt
+              <br />● Applied Bcrypt to hash passwords with salts to encrypt
               sensitive user inputs and defend against possible rainbow table
               attacks. <br /> <br />
-              <div className="center-text">
+              ● Implemented Node/Express.js for RESTful API endpoints, enabling
+              seamless database record retrieval for UI components.
+              <br /> <br />
+              ● Used React-Router to dynamically render paths based on user
+              login or signup status, addressing UI behavioral conc
+              <br /> <br />
+              <span className="center-text">
                 Visit the GitHub Repo{" "}
                 <a
                   href="https://github.com/stephanie-115/nutripup"
@@ -185,7 +214,7 @@ export default function Resume() {
                 >
                   here!
                 </a>
-              </div>
+              </span>
             </CustomAnswer>
           </AccordionDetails>
         </Accordion>
@@ -205,7 +234,10 @@ export default function Resume() {
               <br />● Established OAuth using Passport for secure
               authentication, bolstering defenses, resulting in a 50% reduction
               in unauthorized access. <br /> <br />
-              <div className="center-text">
+              ● Configured Webpack's hot-module-reloading and proxy dev servers
+              for real-time proofing, resulting in improved development cycles.
+              <br /> <br />
+              <span className="center-text">
                 Visit the GitHub Repo{" "}
                 <a
                   href="https://github.com/project-wing-man/wingman"
@@ -214,7 +246,7 @@ export default function Resume() {
                 >
                   here!
                 </a>
-              </div>
+              </span>
             </CustomAnswer>
           </AccordionDetails>
         </Accordion>
@@ -234,7 +266,11 @@ export default function Resume() {
               <br />● Deployed Redux Toolkit for enhanced state management,
               streamlining data flow and reducing bug reports by 10%.
               <br /> <br />
-              <div className="center-text">
+              ● Seamlessly integrated Passport.js with the MERN stack
+              application, ensuring secure and user-friendly Google OAuth 2.0
+              authentication.
+              <br /> <br />
+              <span className="center-text">
                 Visit the GitHub Repo{" "}
                 <a
                   href="https://github.com/Avatar-Group/Grandmas-Cookbook-v2"
@@ -243,7 +279,7 @@ export default function Resume() {
                 >
                   here!
                 </a>
-              </div>
+              </span>
             </CustomAnswer>
           </AccordionDetails>
         </Accordion>
@@ -263,7 +299,14 @@ export default function Resume() {
               <br />● Customized webpack settings to quicken load times by 20%,
               injecting code-splitting, improving engagement with geo-specific
               produce data. <br /> <br />
-              <div className="center-text">
+              ● Designed software-defined infrastructure using Figma, showcasing
+              optimal database schema, structure, and local development user
+              flow.
+              <br /> <br />
+              ● Optimized rendering performance in the application by
+              implementing React hooks, simplifying component logic handling.
+              <br /> <br />
+              <span className="center-text">
                 Visit the GitHub Repo{" "}
                 <a
                   href="https://github.com/inseasonlocally/inseasonlocally"
@@ -272,7 +315,7 @@ export default function Resume() {
                 >
                   here!
                 </a>
-              </div>
+              </span>
             </CustomAnswer>
           </AccordionDetails>
         </Accordion>
@@ -328,6 +371,7 @@ export default function Resume() {
         <div className="download-button-container">
           <DownloadButton />
         </div>
+        <div className="container-spacing"></div>
       </div>
     </section>
   );

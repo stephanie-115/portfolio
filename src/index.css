@@ -262,6 +262,10 @@ h2 {
   margin-top: 80px;
 }
 
+.container-spacing {
+  margin-bottom: 20px;
+}
+
 .download-button-container {
   display: flex;
   justify-content: center;
@@ -393,7 +397,7 @@ textarea::placeholder {
 @media only screen and (max-width: 767px) {
   .navbar {
     position: fixed;
-    width: 100%;
+    width: 767px;
     height: auto;
     top: 0;
     left: 0;
@@ -497,13 +501,12 @@ textarea::placeholder {
 @media only screen and (max-width: 400px) {
   .navbar {
     position: fixed;
-    width: 100%;
+    width: 400px;
     height: auto;
     top: 0;
     left: 0;
     height: 40px;
     padding-top: 15px;
-    writing-mode: horizontal-tb;
     text-align: center;
     display: flex;
     justify-content: space-around;
