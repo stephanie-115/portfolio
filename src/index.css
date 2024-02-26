@@ -495,7 +495,7 @@ textarea::placeholder {
   }
 }
 
-/* //////// MOBILE //////// */
+/* //////// MOBILE DEVICE //////// */
 @media only screen and (max-width: 400px) {
   .navbar {
     position: fixed;
