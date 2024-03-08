@@ -287,6 +287,22 @@ h2 {
   transform: scale(1.1);
 }
 
+.outlined-text {
+  color: #fffdd0;
+  font-size: 18px; 
+  display: inline-block;
+  text-align: center; 
+  line-height: 1; 
+  box-shadow: 0 0 0 2px #024542, 0 0 0 10px #024542;
+  border-radius: 45%; 
+  padding: 4px; 
+  background-color: #024542;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+
+
+
 /* //////// CONTACT SECTION //////// */
 
 .contact-container {

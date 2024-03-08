@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useSpring, a } from "@react-spring/web";
 import styles from "./FlipCard.module.css";
 import CardIcons from "./CardIcons";
-
+``
 const FlipCard = ({ card }) => {
   const [flipped, set] = useState(false);
   const { transform, opacity } = useSpring({

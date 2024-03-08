@@ -124,6 +124,13 @@ export default function Resume() {
                 >
                   here!
                 </a>
+                <br/>
+                <span class="outlined-text">React</span>
+                <span class="outlined-text">GraphQL</span>
+                <span class="outlined-text">TypeScript</span>
+                <span class="outlined-text">Apollo Client</span>
+                <span class="outlined-text">Redis</span>
+                <span class="outlined-text">Jest</span>
               </span>
             </CustomAnswer>
           </AccordionDetails>
@@ -171,6 +178,13 @@ export default function Resume() {
                 >
                   here!
                 </a>
+                <br/>
+                <span class="outlined-text">Next.js</span>
+                <span class="outlined-text">GraphQL</span>
+                <span class="outlined-text">TypeScript</span>
+                <span class="outlined-text">MUI</span>
+                <span class="outlined-text">Jest</span>
+                <span class="outlined-text">Cypress</span>
               </span>
             </CustomAnswer>
           </AccordionDetails>
@@ -203,7 +217,7 @@ export default function Resume() {
               seamless database record retrieval for UI components.
               <br /> <br />
               ● Used React-Router to dynamically render paths based on user
-              login or signup status, addressing UI behavioral conc
+              login or signup status, addressing UI behavioral concerns.
               <br /> <br />
               <span className="center-text">
                 Visit the GitHub Repo{" "}
@@ -214,6 +228,16 @@ export default function Resume() {
                 >
                   here!
                 </a>
+                <br/>
+                <span class="outlined-text">React</span>
+                <span class="outlined-text">Node.js</span>
+                <span class="outlined-text">Express</span>
+                <span class="outlined-text">PostgreSQL</span>
+                <span class="outlined-text">Webpack</span>
+                <span class="outlined-text">Jest</span>
+                <span class="outlined-text">OpenAI API</span>
+                <span class="outlined-text">Passport.js</span>
+                <span class="outlined-text">Bcrypt</span>
               </span>
             </CustomAnswer>
           </AccordionDetails>
@@ -246,6 +270,12 @@ export default function Resume() {
                 >
                   here!
                 </a>
+                <br />
+                <span class="outlined-text">React</span>
+                <span class="outlined-text">PostgreSQL</span>
+                <span class="outlined-text">TypeScript</span>
+                <span class="outlined-text">Webpack</span>
+                <span class="outlined-text">Passport.js</span>
               </span>
             </CustomAnswer>
           </AccordionDetails>
@@ -279,7 +309,15 @@ export default function Resume() {
                 >
                   here!
                 </a>
+                <br/>
               </span>
+              <span class="outlined-text">React</span>
+              <span class="outlined-text">Express</span>
+              <span class="outlined-text">Node.js</span>
+              <span class="outlined-text">MongoDB</span>
+              <span class="outlined-text">Redux Toolkit</span>
+              <span class="outlined-text">Passport.js</span>
+              <span class="outlined-text">MUI</span>
             </CustomAnswer>
           </AccordionDetails>
         </Accordion>
@@ -306,7 +344,7 @@ export default function Resume() {
               ● Optimized rendering performance in the application by
               implementing React hooks, simplifying component logic handling.
               <br /> <br />
-              <span className="center-text">
+              <span class="center-text">
                 Visit the GitHub Repo{" "}
                 <a
                   href="https://github.com/inseasonlocally/inseasonlocally"
@@ -315,6 +353,13 @@ export default function Resume() {
                 >
                   here!
                 </a>
+                <br />
+                <span class="outlined-text">React</span>
+                <span class="outlined-text">Webpack</span>
+                <span class="outlined-text">Express</span>
+                <span class="outlined-text">PostgreSQL</span>
+                <span class="outlined-text">React Router</span>
+                <span class="outlined-text">Figma</span>
               </span>
             </CustomAnswer>
           </AccordionDetails>
