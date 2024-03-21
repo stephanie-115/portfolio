@@ -13,6 +13,8 @@ import greenpets from "../assets/greenpets-mockup.png";
 import underConstruction from "../assets/construction.png";
 import githubIcon from "../assets/github.png";
 import websiteIcon from "../assets/website.png";
+import grandma from '../assets/grandma.png';
+import locally from '../assets/locally.png';
 import { Reveal } from "./Reveal";
 
 const cardsData = [
@@ -61,7 +63,7 @@ const cardsData = [
     image: cookboook,
     description:
       "Timeless flavors, modern convenience – Grandma's recipes with a Tasty API twist.",
-    mockup: underConstruction,
+    mockup: grandma,
     githubIcon,
     githubUrl: "https://github.com/Avatar-Group/Grandmas-Cookbook-v2",
   },
@@ -70,7 +72,7 @@ const cardsData = [
     image: produce,
     description:
       "Local freshness, global taste – Personalized produce picks and vendor reviews.",
-    mockup: underConstruction,
+    mockup: locally,
     githubIcon,
     githubUrl: "https://github.com/inseasonlocally/inseasonlocally",
   },

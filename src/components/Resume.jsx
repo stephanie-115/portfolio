@@ -17,6 +17,10 @@ const CustomAnswer = styled(Typography)({
   color: "#fffdd0",
   fontFamily: "Verdana, Geneva, Tahoma, sans-serif",
   fontSize: "1.2rem",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center", 
+  justifyContent: "center", 
 });
 
 const Accordion = styled((props) => (
@@ -125,12 +129,12 @@ export default function Resume() {
                   here!
                 </a>
                 <br/>
-                <span class="outlined-text">React</span>
-                <span class="outlined-text">GraphQL</span>
-                <span class="outlined-text">TypeScript</span>
-                <span class="outlined-text">Apollo Client</span>
-                <span class="outlined-text">Redis</span>
-                <span class="outlined-text">Jest</span>
+                <span className="outlined-text">React</span>
+                <span className="outlined-text">GraphQL</span>
+                <span className="outlined-text">TypeScript</span>
+                <span className="outlined-text">Apollo Client</span>
+                <span className="outlined-text">Redis</span>
+                <span className="outlined-text">Jest</span>
               </span>
             </CustomAnswer>
           </AccordionDetails>
@@ -179,12 +183,12 @@ export default function Resume() {
                   here!
                 </a>
                 <br/>
-                <span class="outlined-text">Next.js</span>
-                <span class="outlined-text">GraphQL</span>
-                <span class="outlined-text">TypeScript</span>
-                <span class="outlined-text">MUI</span>
-                <span class="outlined-text">Jest</span>
-                <span class="outlined-text">Cypress</span>
+                <span className="outlined-text">Next.js</span>
+                <span className="outlined-text">GraphQL</span>
+                <span className="outlined-text">TypeScript</span>
+                <span className="outlined-text">MUI</span>
+                <span className="outlined-text">Jest</span>
+                <span className="outlined-text">Cypress</span>
               </span>
             </CustomAnswer>
           </AccordionDetails>
@@ -229,15 +233,15 @@ export default function Resume() {
                   here!
                 </a>
                 <br/>
-                <span class="outlined-text">React</span>
-                <span class="outlined-text">Node.js</span>
-                <span class="outlined-text">Express</span>
-                <span class="outlined-text">PostgreSQL</span>
-                <span class="outlined-text">Webpack</span>
-                <span class="outlined-text">Jest</span>
-                <span class="outlined-text">OpenAI API</span>
-                <span class="outlined-text">Passport.js</span>
-                <span class="outlined-text">Bcrypt</span>
+                <span className="outlined-text">React</span>
+                <span className="outlined-text">Node.js</span>
+                <span className="outlined-text">Express</span>
+                <span className="outlined-text">PostgreSQL</span>
+                <span className="outlined-text">Webpack</span>
+                <span className="outlined-text">Jest</span>
+                <span className="outlined-text">OpenAI API</span>
+                <span className="outlined-text">Passport.js</span>
+                <span className="outlined-text">Bcrypt</span>
               </span>
             </CustomAnswer>
           </AccordionDetails>
@@ -271,11 +275,11 @@ export default function Resume() {
                   here!
                 </a>
                 <br />
-                <span class="outlined-text">React</span>
-                <span class="outlined-text">PostgreSQL</span>
-                <span class="outlined-text">TypeScript</span>
-                <span class="outlined-text">Webpack</span>
-                <span class="outlined-text">Passport.js</span>
+                <span className="outlined-text">React</span>
+                <span className="outlined-text">PostgreSQL</span>
+                <span className="outlined-text">TypeScript</span>
+                <span className="outlined-text">Webpack</span>
+                <span className="outlined-text">Passport.js</span>
               </span>
             </CustomAnswer>
           </AccordionDetails>
@@ -309,15 +313,15 @@ export default function Resume() {
                 >
                   here!
                 </a>
-                <br/>
+                <br />
+              <span className="outlined-text">React</span>
+              <span className="outlined-text">Express</span>
+              <span className="outlined-text">Node.js</span>
+              <span className="outlined-text">MongoDB</span>
+              <span className="outlined-text">Redux Toolkit</span>
+              <span className="outlined-text">Passport.js</span>
+              <span className="outlined-text">MUI</span>
               </span>
-              <span class="outlined-text">React</span>
-              <span class="outlined-text">Express</span>
-              <span class="outlined-text">Node.js</span>
-              <span class="outlined-text">MongoDB</span>
-              <span class="outlined-text">Redux Toolkit</span>
-              <span class="outlined-text">Passport.js</span>
-              <span class="outlined-text">MUI</span>
             </CustomAnswer>
           </AccordionDetails>
         </Accordion>
@@ -344,7 +348,7 @@ export default function Resume() {
               ● Optimized rendering performance in the application by
               implementing React hooks, simplifying component logic handling.
               <br /> <br />
-              <span class="center-text">
+              <span className="center-text">
                 Visit the GitHub Repo{" "}
                 <a
                   href="https://github.com/inseasonlocally/inseasonlocally"
@@ -354,12 +358,12 @@ export default function Resume() {
                   here!
                 </a>
                 <br />
-                <span class="outlined-text">React</span>
-                <span class="outlined-text">Webpack</span>
-                <span class="outlined-text">Express</span>
-                <span class="outlined-text">PostgreSQL</span>
-                <span class="outlined-text">React Router</span>
-                <span class="outlined-text">Figma</span>
+                <span className="outlined-text">React</span>
+                <span className="outlined-text">Webpack</span>
+                <span className="outlined-text">Express</span>
+                <span className="outlined-text">PostgreSQL</span>
+                <span className="outlined-text">React Router</span>
+                <span className="outlined-text">Figma</span>
               </span>
             </CustomAnswer>
           </AccordionDetails>
@@ -374,9 +378,9 @@ export default function Resume() {
           </AccordionSummary>
           <AccordionDetails>
             <CustomAnswer>
-              ● <b>CUNY- Queens College</b> | Queens, NY |{" "}
-              <i>Masters of Science</i> <br />
-              <br />● <b>Siena College</b> | Loudonville, NY |{" "}
+              <b>CUNY- Queens College</b>  Queens, NY 
+              <i>Masters of Science</i>
+              <br /><b>Siena College</b>  Loudonville, NY
               <i>Bachelor of Arts</i>
             </CustomAnswer>
           </AccordionDetails>
@@ -391,7 +395,6 @@ export default function Resume() {
           </AccordionSummary>
           <AccordionDetails>
             <CustomAnswer>
-              ●
               <a
                 href="https://www.linkedin.com/feed/update/urn:li:activity:7098732087989428224/"
                 target="_blank"
@@ -399,9 +402,8 @@ export default function Resume() {
               >
                 Testing Tools and Frameworks
               </a>{" "}
-              | <i>Hosted by Jeeny & Bractlet</i>
+               <i>Hosted by Jeeny & Bractlet</i>
               <br />
-              <br />●
               <a
                 href="https://vistavisualizer.medium.com/vista-the-remedy-to-your-graphql-schema-woes-6a99e16e1fbf"
                 target="_blank"
@@ -409,7 +411,7 @@ export default function Resume() {
               >
                 Vista: The Remedy to Your GraphQL Schema Woes
               </a>{" "}
-              | <i>Medium</i>
+               <i>Medium</i>
             </CustomAnswer>
           </AccordionDetails>
         </Accordion>
