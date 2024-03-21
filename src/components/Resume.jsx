@@ -19,8 +19,8 @@ const CustomAnswer = styled(Typography)({
   fontSize: "1.2rem",
   display: "flex",
   flexDirection: "column",
-  alignItems: "center", 
-  justifyContent: "center", 
+  alignItems: "center",
+  justifyContent: "center",
 });
 
 const Accordion = styled((props) => (
@@ -128,7 +128,7 @@ export default function Resume() {
                 >
                   here!
                 </a>
-                <br/>
+                <br />
                 <span className="outlined-text">React</span>
                 <span className="outlined-text">GraphQL</span>
                 <span className="outlined-text">TypeScript</span>
@@ -182,7 +182,7 @@ export default function Resume() {
                 >
                   here!
                 </a>
-                <br/>
+                <br />
                 <span className="outlined-text">Next.js</span>
                 <span className="outlined-text">GraphQL</span>
                 <span className="outlined-text">TypeScript</span>
@@ -232,7 +232,7 @@ export default function Resume() {
                 >
                   here!
                 </a>
-                <br/>
+                <br />
                 <span className="outlined-text">React</span>
                 <span className="outlined-text">Node.js</span>
                 <span className="outlined-text">Express</span>
@@ -314,13 +314,13 @@ export default function Resume() {
                   here!
                 </a>
                 <br />
-              <span className="outlined-text">React</span>
-              <span className="outlined-text">Express</span>
-              <span className="outlined-text">Node.js</span>
-              <span className="outlined-text">MongoDB</span>
-              <span className="outlined-text">Redux Toolkit</span>
-              <span className="outlined-text">Passport.js</span>
-              <span className="outlined-text">MUI</span>
+                <span className="outlined-text">React</span>
+                <span className="outlined-text">Express</span>
+                <span className="outlined-text">Node.js</span>
+                <span className="outlined-text">MongoDB</span>
+                <span className="outlined-text">Redux Toolkit</span>
+                <span className="outlined-text">Passport.js</span>
+                <span className="outlined-text">MUI</span>
               </span>
             </CustomAnswer>
           </AccordionDetails>
@@ -378,9 +378,10 @@ export default function Resume() {
           </AccordionSummary>
           <AccordionDetails>
             <CustomAnswer>
-              <b>CUNY- Queens College</b>  Queens, NY 
+              <b>CUNY- Queens College</b> Queens, NY
               <i>Masters of Science</i>
-              <br /><b>Siena College</b>  Loudonville, NY
+              <br />
+              <b>Siena College</b> Loudonville, NY
               <i>Bachelor of Arts</i>
             </CustomAnswer>
           </AccordionDetails>
@@ -402,7 +403,7 @@ export default function Resume() {
               >
                 Testing Tools and Frameworks
               </a>{" "}
-               <i>Hosted by Jeeny & Bractlet</i>
+              <i>Hosted by Jeeny & Bractlet</i>
               <br />
               <a
                 href="https://vistavisualizer.medium.com/vista-the-remedy-to-your-graphql-schema-woes-6a99e16e1fbf"
@@ -411,7 +412,7 @@ export default function Resume() {
               >
                 Vista: The Remedy to Your GraphQL Schema Woes
               </a>{" "}
-               <i>Medium</i>
+              <i>Medium</i>
             </CustomAnswer>
           </AccordionDetails>
         </Accordion>

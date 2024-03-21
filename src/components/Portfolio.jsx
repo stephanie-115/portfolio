@@ -13,8 +13,8 @@ import greenpets from "../assets/greenpets-mockup.png";
 import underConstruction from "../assets/construction.png";
 import githubIcon from "../assets/github.png";
 import websiteIcon from "../assets/website.png";
-import grandma from '../assets/grandma.png';
-import locally from '../assets/locally.png';
+import grandma from "../assets/grandma.png";
+import locally from "../assets/locally.png";
 import { Reveal } from "./Reveal";
 
 const cardsData = [
